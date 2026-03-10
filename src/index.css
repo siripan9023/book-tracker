@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card Style */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  /* Dark mode variants for manually toggled dark mode (optional later) */
+  .dark .glass-card {
+    @apply bg-dark-card/70 border-dark-border/50 shadow-2xl;
+  }
+
+  /* Fancy Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-books-500 text-white rounded-lg font-medium tracking-wide transition-all duration-300 hover:bg-books-600 hover:shadow-lg hover:shadow-books-500/30 active:scale-95 focus:outline-none focus:ring-2 focus:ring-books-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-white text-slate-700 border border-slate-200 rounded-lg font-medium transition-all duration-300 hover:bg-slate-50 hover:text-books-600 hover:border-books-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-slate-200 focus:ring-offset-2;
+  }
+
+  /* Status Badges */
+  .badge {
+    @apply px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider inline-block;
+  }
+  .badge-reading {
+    @apply bg-amber-100 text-amber-700 border border-amber-200;
+  }
+  .badge-want-to-read {
+    @apply bg-blue-100 text-blue-700 border border-blue-200;
+  }
+  .badge-finished {
+    @apply bg-emerald-100 text-emerald-700 border border-emerald-200;
+  }
+}
+
+/* Custom Scrollbar for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
