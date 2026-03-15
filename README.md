@@ -1,16 +1,9 @@
-# React + Vite
+# Book Tracker Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+โปรเจกต์เว็บแอปพลิเคชันสำหรับติดตามและจัดการคลังหนังสือส่วนตัว พัฒนาด้วย React, Vite และ Tailwind CSS (ส่วนหนึ่งของรายวิชา Advanced Scripting for Design)
 
-Currently, two official plugins are available:
+## วิธีการติดตั้งและรันโค้ด (How to Run)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ติดตั้ง Dependencies รันคำสั่งเพื่อติดตั้งแพ็กเกจที่จำเป็นทั้งหมดผ่าน npm: npm install
+- เมื่อติดตั้งเสร็จแล้ว ให้รันคำสั่งต่อไปนี้เพื่อเปิดเว็บแอปพลิเคชัน: npm run dev
+- เปิดดูหน้าเว็บ โดยการเปิดเบราว์เซอร์แล้วไปที่ URL ที่แสดงใน Terminal (โดยปกติจะเป็น http://localhost:5173/)
